@@ -1,0 +1,388 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Anton|Baloo+Bhai|Cabin|Fira+Sans|Lato|Roboto|Ubuntu|Francois+One|Hammersmith+One');
+
+/* Basic styling */
+html,body{
+    font-size: 10px;
+}
+
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+p{
+    font-family:"Lato",sans-serif;
+}
+
+#preloader{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100vh;
+    width:100%;
+    z-index: 10000;
+    background-color:#fff;
+}
+
+#preloader #pre_logo{
+    width:8rem;
+    height:8rem;
+    position:absolute;
+    left:50%;
+    top:27%;
+    transform:translate(-50%,-50%);
+}
+
+#preloader #pre_gif{
+    width:15rem;
+    height:15rem;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+.top-bar{
+    height:100%;
+    width:100%;
+    display:block;
+    position:absolute;
+}
+.top-bar ul{
+    display:flex;
+    justify-content: flex-end;
+    margin:4.5rem;
+}
+.top-bar ul li{
+    padding: .3rem .5rem;
+    font-size:1.5em;
+    letter-spacing:.8px;
+    font-family:"Roboto",sans-serif;
+    color:#411ED2;
+}
+.top-bar ul li:last-child{
+    margin-right:1em;
+}
+
+/* Header Styles */
+.header{
+    display:flex;
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgba(102,1,250,.55),rgba(102,1,255,.75)),url(../images/intro.jpeg);
+    background-position: center;
+    background-size:cover;
+   -webkit-clip-path: circle(49.9% at 23% 37%);
+    clip-path: circle(49.9% at 23% 37%);
+}
+.header img{
+    position:absolute;
+    left:4em;
+    top:4em;
+    width: 4rem;
+    height:4rem;
+}
+.header h5{
+    display:block;
+    position:relative;
+    left:5em;
+    top:2.2em;
+    color:#fff;
+    font-family:"Cabin",sans-serif;
+    letter-spacing:.8px;
+    font-weight:bold;
+    font-size:1.85em;
+}
+.main-text{
+    position:absolute;
+    left:10%;
+    top:30%;
+    font-size:10rem;
+    font-family:'Francois One',sans-serif;
+    line-height:1.2;
+    color: #fff; 
+    text-transform:uppercase;
+}
+
+/* About section */
+.about{
+   margin:10rem auto 2rem auto;
+   width:75%;
+}
+.about-header{
+    display: block;
+    margin:9rem auto 1.8rem auto;
+    text-align:center;
+    letter-spacing: 5px;
+    font-family: "Hammersmith One", sans-serif;
+    color:#530bc1;
+}
+.about-content{
+    display: block;
+    text-align:justify;
+    color:#c1c1c1;
+    line-height:2.3;
+    font-size: 1.55rem;
+    font-family:"Roboto", sans-serif;
+    letter-spacing:.6px;
+}
+
+/* Feature section */
+.features{
+    width:75%;
+    margin:6.5rem auto;
+}
+.features p,.features span{
+    text-align:left;
+    font-family:"Hammersmith One", sans-serif;
+    margin:0;
+    padding:0;
+}
+.features i{
+    font-size:1.9rem;
+    color:#530bc1;
+    margin:0;
+}
+.features p{
+    font-size:1.55em;
+    margin:.4em auto;
+    text-align:left;
+    color:#c1c1c1;
+    letter-spacing:.6px;
+    font-family:"Roboto", sans-serif;
+    line-height:1.9;
+}
+.features span{
+    font-size:2rem;
+    padding:.4em;
+    letter-spacing:.5px;
+    color:#888;
+    margin:0;
+}
+.row{
+    margin:5rem auto;
+}
+/* Contact section */
+.launch{
+    margin:4rem auto 0 auto;
+    padding:8.5rem;
+    width:100%;
+    height:100%;
+    background: linear-gradient(rgba(102,1,255,.75),rgba(102,1,250,.8)),url(../images/arriving.jpeg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+.launch i{
+    text-align:center;
+    display:block;
+    margin:0;
+    font-size:7.4rem;
+    color:#fff;
+}
+.launch h2{
+    padding:0 0 2.5rem 0;
+    text-align:center;
+    display:block;
+    color:#fff;
+    font-family:'Cabin',sans-serif;
+    letter-spacing:1px;
+    font-size:5.2rem;
+}
+.launch p{
+    text-align:center;
+    display:block;
+    color:#fff;
+    font-family:'Roboto',sans-serif;
+    font-size:1.5rem;
+    width:60%;
+    margin:0 auto;
+    line-height:1.9;
+}
+.social{
+    display:block;
+}
+.social ul{
+    display:flex;
+    justify-content:center;
+    padding:1.6rem;
+}
+.social ul li a i{
+    font-size:1.8rem;
+    padding:1.2rem;
+    color:#ddd;
+}
+.social ul li a i:hover{
+    color:#fff;
+    transition:all .3s ease-in;
+}
+.social p{
+    font-size:1rem;
+    padding:0;
+    margin:0;
+}
+.email{
+    display:block;
+    padding:3rem;
+}
+.email i{
+    font-size:1.6rem;
+}
+.email span{
+    font-family:'Roboto',sans-serif;
+    letter-spacing:1px;
+    font-size:1.5rem;
+}
+
+/* Footer */
+footer{
+    background-color:floralwhite;
+}
+footer p{
+    margin:0;
+    padding:3rem;
+    font-size:1.3rem;
+    letter-spacing:1px;
+    text-align:center;
+}
+
+/* Terms & Privacy page styles */
+#terms{
+    margin:12% auto 5% auto;
+    width:80%;
+}
+
+.term-h{
+    position: fixed;
+    width: 100%;
+    left:0;
+    top:0;
+    display: block;
+}
+
+.term-h i{
+    position: absolute;
+    right:5rem;
+    top:4rem;
+    font-size:2rem;
+}
+.term-h a{
+    color:#222;
+}
+
+.term-h h2{
+    position:static;
+    margin:0;
+    padding: 1.5em;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 1.5em #e1e1e1;
+    letter-spacing: .15em;
+    font-size: 2.3rem;
+    font-family:'Cabin',sans-serif;
+}
+.term-h img{
+    position: absolute;
+    display: block;
+    margin:2.5rem 0 1.5rem 4.5rem;
+    height:4em;
+    width:4em;
+}
+#terms p{
+    padding:0;
+    margin:0;
+    color:#777;
+    line-height:2.12em;
+    font-size: 1.65rem;
+    font-family:'Fira Sans',sans-serif;
+}
+
+#terms a{
+    text-decoration: none;
+    color:#021b79;
+}
+
+@media only screen and (max-width: 900px){
+    #terms{
+    margin:8% auto;
+    width:85%;
+}
+    .term-h{
+    position: relative;
+    width: 100%;
+    left:0;
+    top:0;
+    display: block;
+}
+   .term-h img{
+    position: absolute;
+    display: block;
+    left:50%;
+    transform: translateX(-50%);
+    margin:1.2rem auto;
+    height:6rem;
+    width:6rem;
+} 
+
+    .term-h h2{
+    margin-top:0;
+    padding-top: 9rem;
+    display: block;
+    font-size:2rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 1.5em #e1e1e1;
+}
+    #terms p{
+    padding:0;
+    margin:0;
+    line-height:2.12em;
+    font-size: 1.1rem;
+}
+    
+.term-h i{
+    position:absolute;
+    right:7rem;
+    top:7rem;
+    font-size:2rem;
+}
+    
+}
+
+@media only screen and (max-width: 768px){
+    #terms{
+    margin:8% auto;
+    width:85%;
+}
+    .term-h{
+    position: relative;
+    width: 100%;
+    left:0;
+    top:0;
+    display: block;
+}
+   .term-h img{
+    position: absolute;
+    display: block;
+    left:50%;
+    transform: translateX(-50%);
+    margin:1.2em auto;
+    height:3.5rem;
+    width:3.5rem;
+} 
+
+    .term-h h2{
+    margin-top:0;
+    padding-top: 5.3em;
+    display: block;
+    font-size:1.15em;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 1.5em #e1e1e1;
+}
+    
+}
+
+
